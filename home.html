@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="home.css">
+<meta name="viewport" charset=utf-8 content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+  <video autoplay muted loop id="myVideo">
+    <source src="bg_video.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+
+<div id="navbar">
+  <a class="active" href="home.html">Home</a>
+  <a class="active" href="obiective_turistice.html">Obiective turistice</a>
+  <a class="active" href="istorie.html">Istorie</a>
+  <a class="active" href="Untold.html">Untold</a>
+  <a class="active" href="galerie.html">Galerie</a>
+  <a class="active" href="contact.html">Contact</a>
+</div>
+
+
+<div class="bg-text">
+  <button onclick="myFunction()" style="font-size:85px; background-color: transparent; color: purple; font-family: Georgia, 'Times New Roman', Times, serif">Cluj-Napoca<button>
+</div>
+
+<div id="snackbar">În istorica regiune a Transilvaniei, într-o zonă de legendă, Cluj-Napoca așteaptă domol să fie descoperit. Odată ce ajungi în oraș și îi simți vibrația, vei fi fermecat pentru totdeauna și pe măsură ce te conectezi la specificul locului, o să vezi de ce orașul este supranumit „Inima Transilvaniei”.</div>
+
+<script>
+  var video = document.getElementById("myVideo");
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-50px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+
+function myFunction() {
+  var x = document.getElementById("snackbar");
+  x.className = "show";
+  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 13000);
+}
+</script>
+
+</body>
+</html>

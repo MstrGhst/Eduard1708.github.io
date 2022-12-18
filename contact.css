@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+font-family: Arial, Helvetica, sans-serif;
+}
+
+#navbar {
+    background-color: #7814FF;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: block;
+    transition: top 0.3s;
+    z-index: 99;
+    max-height:50px;
+    }
+    
+    #navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 17px;
+    }
+    
+    #navbar a:hover {
+    background-color: purple;
+    color: black;
+    }
+    
+    #navbar a.active {
+    background-color: #7814FF;
+    color: white;
+    }
+    #navbar input[type=text] {
+    float: right;
+    padding: 6px;
+    margin-top: 8px;
+    margin-right: 16px;
+    border: none;
+    font-size: 17px;
+    }
+    #navbar input[type=text] {
+    box-sizing: border-box;
+    border: 1px solid #ccc;  
+    }
+    .container {
+        font-family: arial;
+        font-size: 24px;
+        margin: 25px;
+        width: 350px;
+        height: 200px;
+        position: absolute;
+        top: 20%;
+        left: 3%;
+        margin: -25px 0 0 -25px;
+      }
+      #myVideo {
+        position: absolute;
+        top: 40%;
+        width: 900px;
+        left: 25%
+      }
+      body {
+        background-image: url('bg_contact.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;  
+        background-size: cover;
+      }
+      
